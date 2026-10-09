@@ -1,0 +1,6 @@
+{
+  "name": "Handmade Haven – Thoughtful Artisanal Gifts & Custom Keepsakes",
+  "description": "Discover meaningful handmade gifts, crochet florals, botanical candles, resin art, and custom gift hampers crafted with love.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

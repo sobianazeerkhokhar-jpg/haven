@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-blush: #D49B9B;
+    --color-cream: #181210;
+    --color-sage: #8FA986;
+    --color-sage-dark: #A5C09B;
+    --color-espresso: #F5EBE6;
+    --color-espresso-light: #C8B6AE;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #181210;
+    color: #F5EBE6;
+    overflow-x: hidden;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  input, select, textarea {
+    color: #F5EBE6;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: rgba(245, 235, 230, 0.45) !important;
+  }
+}
+
+/* Full Luxury Dark Espresso & Mauve Boutique Remapping */
+.bg-\[\#FFF9F0\] {
+  background-color: #181210 !important;
+}
+.bg-\[\#FFF9F0\]\/95 {
+  background-color: rgba(24, 18, 16, 0.95) !important;
+}
+.bg-white {
+  background-color: #241B18 !important;
+}
+.bg-white\/90,
+.bg-white\/80 {
+  background-color: rgba(36, 27, 24, 0.92) !important;
+}
+
+.bg-\[\#F7E7E7\] {
+  background-color: #362424 !important;
+  color: #F5EBE6 !important;
+}
+.bg-\[\#F7E7E7\]\/65,
+.bg-\[\#F7E7E7\]\/60,
+.bg-\[\#F7E7E7\]\/50,
+.bg-\[\#F7E7E7\]\/45,
+.bg-\[\#F7E7E7\]\/40 {
+  background-color: rgba(58, 38, 38, 0.78) !important;
+}
+
+.bg-\[\#A8B5A0\]\/20,
+.bg-\[\#A8B5A0\]\/25,
+.bg-\[\#A8B5A0\]\/30 {
+  background-color: rgba(92, 114, 84, 0.28) !important;
+}
+
+/* Primary CTA Buttons & Dark Structural Surfaces */
+button.bg-\[\#453832\],
+.bg-\[\#453832\]\/95 {
+  background-color: #D49B9B !important;
+  color: #181210 !important;
+}
+button.bg-\[\#453832\]:hover {
+  background-color: #E2B0B0 !important;
+  color: #181210 !important;
+}
+
+/* Footer & Admin Sidebar Deepest Espresso Surface */
+footer.bg-\[\#453832\],
+aside.bg-\[\#453832\],
+div.bg-\[\#453832\],
+pre.bg-\[\#453832\] {
+  background-color: #110C0A !important;
+  color: #F5EBE6 !important;
+}
+
+/* Typography & Contrast Compensation for Dark Mode */
+.text-\[\#453832\] {
+  color: #F5EBE6 !important;
+}
+.text-\[\#453832\]\/85,
+.text-\[\#453832\]\/80,
+.text-\[\#453832\]\/75,
+.text-\[\#453832\]\/70 {
+  color: rgba(245, 235, 230, 0.82) !important;
+}
+.text-\[\#453832\]\/65,
+.text-\[\#453832\]\/60,
+.text-\[\#453832\]\/55,
+.text-\[\#453832\]\/50,
+.text-\[\#453832\]\/45 {
+  color: rgba(245, 235, 230, 0.6) !important;
+}
+.text-\[\#6E5D54\] {
+  color: #D49B9B !important;
+}
+.text-\[\#7A8B71\],
+.text-\[\#5A7252\] {
+  color: #9EBC95 !important;
+}
+.text-\[\#B94A48\] {
+  color: #F08A88 !important;
+}
+.text-\[\#F7E7E7\] {
+  color: #E8B8B8 !important;
+}
+.text-\[\#FFF9F0\] {
+  color: #181210 !important;
+}
+footer .text-\[\#FFF9F0\],
+aside .text-\[\#FFF9F0\],
+pre.text-\[\#FFF9F0\] {
+  color: #F5EBE6 !important;
+}
+footer .text-\[\#FFF9F0\]\/80,
+footer .text-\[\#FFF9F0\]\/70,
+footer .text-\[\#FFF9F0\]\/65,
+aside .text-\[\#FFF9F0\]\/80,
+aside .text-\[\#FFF9F0\]\/65 {
+  color: rgba(245, 235, 230, 0.75) !important;
+}
+
+/* Subtle Luminous Hairline Borders on Dark Surfaces */
+.border-\[\#453832\],
+.border-\[\#453832\]\/8,
+.border-\[\#453832\]\/10,
+.border-\[\#453832\]\/12,
+.border-\[\#453832\]\/15,
+.border-\[\#453832\]\/20 {
+  border-color: rgba(245, 235, 230, 0.14) !important;
+}
+
+.divide-\[\#453832\]\/8 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(245, 235, 230, 0.12) !important;
+}
+
+/* Hero & Section Gradients */
+.from-\[\#F7E7E7\]\/45 {
+  --tw-gradient-from: #281B1A !important;
+}
+.to-\[\#FFF9F0\] {
+  --tw-gradient-to: #181210 !important;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
